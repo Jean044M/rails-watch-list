@@ -1,0 +1,8 @@
+<%= simple_form_for @movie, html: { class: "container" } do |f| %>
+  <h2>Nouveau Film</h2>
+  <%= f.input :title, label: "Titre" %>
+  <%= f.input :overview, label: "Résumé" %>
+  <%= f.input :poster_url, label: "URL de l'Affiche" %>
+  <%= f.input :rating, label: "Note" %>
+  <%= f.button :submit, class: "btn btn-primary" %>
+<% end %>
